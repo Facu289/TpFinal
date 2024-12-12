@@ -131,7 +131,8 @@ public class Persona {
         this.sexo = sexo;
     }
     
-    public void crearPersona(){
+
+    public static void crearPersona(){
         Scanner entradaTeclado = new Scanner(System.in);
 
         System.out.println("Ingrese su Nombre:");
@@ -146,10 +147,9 @@ public class Persona {
         String localidad = entradaTeclado.nextLine();
 
         System.out.println("Seleccione el sexo entre las siguientes opciones:");
-        for (Sexo s : Sexo.values()) {
-            System.out.println("- " + s);
+        for (Sexo sexo : Sexo.values()) {
+            System.out.println("- " + sexo);
         }
-
         System.out.print("Ingrese el sexo (MASCULINO, FEMENINO, OTROS): ");
         Sexo sexo = null;
         boolean sexoValido = false;

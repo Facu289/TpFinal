@@ -1,4 +1,7 @@
 public enum Sexo {
+    MASCULINO,FEMENINO, OTROS;
 
-    MASCULINO,FEMENINOM, OTROS;
+    public String obtenerSexo(){
+        return this.name();
+    }
 }

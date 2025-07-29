@@ -1,3 +1,6 @@
+package Excepciones;
+
+
 public class Excepciones {
 
     public Excepciones(String mensaje) {
